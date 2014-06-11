@@ -1,7 +1,8 @@
+<h2>Agrega un comentario:</h2>
 <%= form_for([@post, @post.comments.build]) do |f| %>
 <p>
-<%= f.label :commentr %><br />
-<%= f.text_field :commentr %>
+<%= f.label :commenter %><br />
+<%= f.text_field :commenter %>
 </p>
 <p>
 <%= f.label :body %><br />
@@ -11,4 +12,3 @@
 <%= f.submit %>
 </p>
 <% end %>
-
